@@ -1,4 +1,4 @@
-class Test {
+class TestController {
   public static getTest() {
     const test = [
       {
@@ -14,4 +14,4 @@ class Test {
   }
 }
 
-export default Test;
+export default TestController;
