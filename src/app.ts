@@ -1,15 +1,11 @@
-import express, { Request, Response } from 'express';
-import routes from './routes'
+import express from "express";
+import routes from "./routes";
+import "dotenv/config";
 
 const app = express();
-const port = 5000; 
+const port = process.env.PORT || 5000;
 
 app.use(routes);
-
-
-app.get('/', (req: Request, res: Response) => {
-  res.json({ message: 'The server was inicializate!' });
-});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

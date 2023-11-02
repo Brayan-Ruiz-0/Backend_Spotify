@@ -1,3 +1,4 @@
+"use strict";
 /* import Express, { NextFunction, Request, Response } from "express";
 import { request } from "http";
 import spotifyApi from "../services/Spotify";
